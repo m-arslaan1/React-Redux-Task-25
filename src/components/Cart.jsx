@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { increaseQuantity, decreaseQuantity } from "../features/cartSlice";
 
-function Cart({ onProceedToPayment, onBackToShopping }) {
+function Cart() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.items);
   const totalCost = useSelector((state) => state.cart.totalCost);
@@ -73,19 +73,13 @@ function Cart({ onProceedToPayment, onBackToShopping }) {
 
         {isPaymentPage ? (
           <Link to="/">
-            <button
-              className="w-full px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition duration-300"
-              onClick={onBackToShopping}
-            >
+            <button className="w-full px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition duration-300">
               Go Back to Shopping
             </button>
           </Link>
         ) : (
           <Link to="/payment">
-            <button
-              className="w-full px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition duration-300"
-              onClick={onProceedToPayment}
-            >
+            <button className="w-full px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition duration-300">
               Proceed to Payment
             </button>
           </Link>
