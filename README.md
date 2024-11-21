@@ -1,3 +1,3 @@
 Site to visit: (https://compileonlineshoestore.netlify.app)
 
-As per this new topic which I started learning recently, I am trying to implement a simple online shopping cart system which I have done back by using Context Api. This new topic is about using Redux Toolkit. It was not easy, I took help from internet as well but lot of things I did by my own and have created kind of full webpage.
+I recently started learning about Redux Toolkit and applied it to implement a simple online shopping cart system. Initially, I used the Context API for the same purpose. While it was challenging at first, I sought assistance from various online resources, but much of the development was done independently. As a result, I have successfully created a fully functional webpage.
