@@ -45,7 +45,7 @@ const cartSlice = createSlice({
 
         handleBackToShop: (state) => {
         },
-        
+
         clearCart: (state) => {
             state.items = [];
             state.totalCost = 0;
